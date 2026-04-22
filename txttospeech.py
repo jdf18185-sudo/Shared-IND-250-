@@ -122,7 +122,10 @@ class PDFReaderTTSApp:
         ctk.CTkLabel(
             self.root, text="PDF Reader with Text-to-Speech",
             font=ctk.CTkFont(size=22, weight="bold"),
-        ).pack(pady=(14, 6))
+            text_color="#ffffff",
+            fg_color="#000000",
+            corner_radius=0,
+        ).pack(fill="x", pady=(14, 6), padx=14)
 
         # --- Toolbar: primary action buttons ---
         toolbar = ctk.CTkFrame(self.root)
